@@ -161,6 +161,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
+                  suppressHydrationWarning
                   className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder-foreground/40 focus:border-accent focus:outline-none transition-colors"
                   placeholder="Your name"
                 />
@@ -176,6 +177,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
+                  suppressHydrationWarning
                   className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder-foreground/40 focus:border-accent focus:outline-none transition-colors"
                   placeholder="your@email.com"
                 />
@@ -191,6 +193,7 @@ export default function Contact() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   rows={5}
+                  suppressHydrationWarning
                   className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder-foreground/40 focus:border-accent focus:outline-none transition-colors resize-none"
                   placeholder="Your message here..."
                 />
